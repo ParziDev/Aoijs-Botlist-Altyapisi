@@ -12,8 +12,8 @@ Prefixi:  \`$message[2]\`
 $channelSendMessage[$channelID;\`$userTag[$message[1]]\` adlı botun başarıyla sıraya eklendi{delete:5s}]
 $onlyIf[$message[2]!=;❌ **Kullanım:** \`$getServerVar[prefix]bot-ekle $clientID $getServerVar[prefix]\` **Hata:** Prefix yazılmadı{delete:7s}]
 $onlyIf[$isBot[$message[1]]==true;❌ **Kullanım:** \`$getServerVar[prefix]bot-ekle $clientID $getServerVar[prefix]\` **Hata:** Girilen id bir bota ait değil{delete:5s}]
-$onlyIf[$isNumber[$message[1]]==true;❌ **Kullanım:** \`$getServerVar[prefix]bot-ekle $clientID $getServerVar[prefix]\` **Hata:** ID'niz sayı olmalı]
-$onlyIf[$message[1]!=;❌ **Kullanım:** \`$getServerVar[prefix]bot-ekle $clientID $getServerVar[prefix]\` **Hata:** ID girilmedi]
+$onlyIf[$isNumber[$message[1]]==true;❌ **Kullanım:** \`$getServerVar[prefix]bot-ekle $clientID $getServerVar[prefix]\` **Hata:** ID'niz sayı olmalı{delete:5s}]
+$onlyIf[$message[1]!=;❌ **Kullanım:** \`$getServerVar[prefix]bot-ekle $clientID $getServerVar[prefix]\` **Hata:** ID girilmedi{delete:5s}]
 $onlyIf[$channelID==$getServerVar[botkanal];<#$getServerVar[botkanal]>]
 `
   }
